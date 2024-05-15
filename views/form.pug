@@ -1,0 +1,12 @@
+extends layout 
+
+block content
+  form(action="/new", method="POST")
+    h2 Send a message
+    section
+      label(for="name") Author Name:
+      input#name(type="text" name="messageAuthor")
+    section
+      label(for="text") Message: 
+      textarea#text(name="messageText")
+    button(type="submit") Submit  

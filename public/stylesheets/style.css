@@ -1,6 +1,12 @@
 body {
+  background-color: #030712;
+  color: #f9fafb;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#message-container {
+  padding: 25px;
 }
 
 a {
