@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #message-container
+    each message in messages
+      .message
+        header
+          h2=message.user 
+          .date=message.added.toUTCString()
+        p=message.text
