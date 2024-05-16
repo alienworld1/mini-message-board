@@ -1,7 +1,7 @@
 body {
   background-color: #030712;
   color: #f9fafb;
-  padding: 50px;
+  padding: 8px 50px;
   font: 14px "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
@@ -16,11 +16,25 @@ body {
   gap: 12px;
 }
 
-.message {
+.message, form > button {
   background-color: #10b981;
   border-radius: 5px;
   padding: 12px;
   color: #09090b;
+}
+
+form > button {
+  border: none;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+form > button:hover {
+  background-color: #86efac;
+}
+
+form > button:active {
+  background-color: #059669;
 }
 
 .message > header {
@@ -39,5 +53,47 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #7dd3fc;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+form {
+  margin: 24px 0;
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+
+form > section:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 30%;
+}
+
+form > section {
+  margin: 24px 0;
+}
+
+form input, form textarea {
+  background-color: inherit;
+  outline: none;
+  border: 1px solid #f9fafb;
+  font-size: 1.1rem;
+  color: #f9fafb;
+  caret-color: #f9fafb; 
+}
+
+form textarea {
+  margin: 16px 0;
+}
+
+form > section:last-of-type > * {
+  display: block;
 }
